@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://cj5j8ej1revu7"]
+
+[ext_resource type="Script" uid="uid://cplx3fuxewgai" path="res://addons/candlestick_chart/candlestick_chart.gd" id="1_nhd5v"]
+[ext_resource type="Script" uid="uid://ct2r5hew45ndf" path="res://addons/candlestick_chart/example/example.gd" id="1_smfqv"]
+[ext_resource type="Script" uid="uid://cfnexxm0kqb8o" path="res://addons/candlestick_chart/CandlestickDataRes.gd" id="2_dq2lh"]
+[ext_resource type="Script" uid="uid://c2l6lp2npap4a" path="res://addons/candlestick_chart/CandlestickMARes.gd" id="3_46bxi"]
+[ext_resource type="Script" uid="uid://da4cpko74d0ad" path="res://addons/candlestick_chart/candlestick_chart_theme.gd" id="3_kmib0"]
+
+[sub_resource type="Resource" id="Resource_kmib0"]
+script = ExtResource("2_dq2lh")
+timestamp = "1"
+open = 10.0
+close = 10.2
+high = 10.5
+low = 9.8
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_dq2lh"]
+script = ExtResource("2_dq2lh")
+timestamp = "2"
+open = 10.2
+close = 10.6
+high = 10.7
+low = 10.1
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_dl7nc"]
+script = ExtResource("2_dq2lh")
+timestamp = "3"
+open = 10.6
+close = 10.5
+high = 10.8
+low = 10.4
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_7jejk"]
+script = ExtResource("2_dq2lh")
+timestamp = "4"
+open = 10.5
+close = 10.3
+high = 10.8
+low = 10.2
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_oybge"]
+script = ExtResource("2_dq2lh")
+timestamp = "5"
+open = 10.3
+close = 10.1
+high = 10.6
+low = 9.9
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_gn4np"]
+script = ExtResource("2_dq2lh")
+timestamp = "6"
+open = 10.1
+close = 9.9
+high = 10.4
+low = 9.7
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_pyc3m"]
+script = ExtResource("2_dq2lh")
+timestamp = "7"
+open = 9.9
+close = 10.2
+high = 10.3
+low = 9.8
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_r5kjh"]
+script = ExtResource("2_dq2lh")
+timestamp = "8"
+open = 10.2
+close = 10.5
+high = 10.7
+low = 10.0
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_pl78c"]
+script = ExtResource("2_dq2lh")
+timestamp = "9"
+open = 10.5
+close = 10.8
+high = 10.9
+low = 10.4
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_futir"]
+script = ExtResource("2_dq2lh")
+timestamp = "10"
+open = 10.8
+close = 10.9
+high = 11.2
+low = 10.6
+metadata/_custom_type_script = "uid://cfnexxm0kqb8o"
+
+[sub_resource type="Resource" id="Resource_j1sd2"]
+script = ExtResource("3_46bxi")
+label_name = "MA5"
+period = 5
+color = Color(0.51570326, 0.45452392, 0.9085007, 1)
+metadata/_custom_type_script = "uid://c2l6lp2npap4a"
+
+[sub_resource type="Resource" id="Resource_smfqv"]
+script = ExtResource("3_46bxi")
+label_name = "MA10"
+period = 10
+color = Color(0.23772427, 0.59244823, 0.64804333, 1)
+metadata/_custom_type_script = "uid://c2l6lp2npap4a"
+
+[sub_resource type="Resource" id="Resource_c2u5w"]
+script = ExtResource("3_kmib0")
+background_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+chart_margin_right = 30.0
+y_axis_width = 75.0
+y_axis_auto_ticks = false
+y_axis_color = Color(0.8, 0.8, 0.8, 0.5019608)
+y_axis_tick_length = 10.0
+y_axis_label_color = Color(1, 1, 1, 1)
+x_axis_height = 45.0
+x_axis_tick_count = 3
+x_axis_color = Color(0.8, 0.8, 0.8, 0.5019608)
+x_axis_tick_length = 10.0
+x_axis_label_color = Color(1, 1, 1, 1)
+legend_height = 30.0
+legend_margin_top = 10.0
+legend_padding_left = 30.0
+legend_label_font_color = Color(1, 1, 1, 1)
+
+[node name="Example" type="Control" unique_id=2054063804]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_smfqv")
+data_point_count = 180
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=905546817]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="CandlestickChart" type="Control" parent="." unique_id=989885974]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.75
+offset_top = -221.0
+offset_right = 345.75
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nhd5v")
+data = Array[ExtResource("2_dq2lh")]([SubResource("Resource_kmib0"), SubResource("Resource_dq2lh"), SubResource("Resource_dl7nc"), SubResource("Resource_7jejk"), SubResource("Resource_oybge"), SubResource("Resource_gn4np"), SubResource("Resource_pyc3m"), SubResource("Resource_r5kjh"), SubResource("Resource_pl78c"), SubResource("Resource_futir")])
+moving_averages = Array[ExtResource("3_46bxi")]([SubResource("Resource_j1sd2"), SubResource("Resource_smfqv")])
+custom_theme = SubResource("Resource_c2u5w")
+metadata/_custom_type_script = "uid://cplx3fuxewgai"
